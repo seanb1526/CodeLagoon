@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean's At-Home Robotics - Personal Lego Coding Lessons in Bucks County</title>
+    <meta name="description"
+        content="Hi! I'm Sean, and I bring fun Lego robotics and coding lessons directly to your home in Bucks County. Personalized learning that fits your family's schedule.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/gallery/CodingLogo.png" alt="At-Home Robotics Logo" class="logo-image">
+                <span>At-Home Robotics</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#lessons" class="nav-link">Lessons</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Build, Code, Create with Lego!</h1>
+                <p class="hero-subtitle">Professional at-home Lego robotics and coding lessons that bring STEM learning
+                    directly to your door. Watch your child's creativity and technical skills flourish!</p>
+                <div class="hero-buttons">
+                    <a href="#schedule" class="btn btn-primary">Book a Lesson</a>
+                    <a href="#lessons" class="btn btn-secondary">View Lessons</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-home"></i>
+                        <span>At Your Home</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Expert Instructor</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Flexible Schedule</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <video controls preload="metadata">
+                    <source src="videos/clawbot.mp4" type="video/mp4">
+                    <img src="images/gallery/CodingLogo.png" alt="Kids building Lego robots" loading="lazy">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>The person behind the lessons - passionate about STEM, kids, and making learning fun</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/gallery/sean-photo.jpg" alt="Sean - Your Lego Robotics Instructor" loading="lazy">
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>2+</h4>
+                            <p>Years Teaching</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>300+</h4>
+                            <p>Lessons Taught</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="no-animate">1-on-1</h4>
+                            <p>Personal Attention</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hi, I'm Sean!</h3>
+                    <p>I'm a STEM Teacher with a Bachelor's degree in Computer Science. I have over 5+ years working with children in educational environments. I'm very passionate computer science and its intersection with entrepreneurship. It's my goal to teach and share the knowledge I've accumulated about coding and robotics to encourage kids to explore the field and discover the endless possibilities. </p>
+
+                    <h3>Why I Love Teaching</h3>
+                    <ul>
+                        <li><strong>Every Kid is Different:</strong> I tailor each lesson to match your child's 
+                            personality and learning style</li>
+                        <li><strong>Learning Should Be Fun:</strong> We play, experiment, and sometimes things 
+                            don't work - and that's totally okay!</li>
+                        <li><strong>Building Confidence:</strong> I focus on celebrating small wins and helping 
+                            kids believe in themselves</li>
+                        <li><strong>Real Problem Solving:</strong> We tackle actual challenges, not just follow 
+                            instructions</li>
+                        <li><strong>Your Family's Schedule:</strong> I work around your life, not the other way around</li>
+                    </ul>
+
+                    <h3>My Teaching Philosophy</h3>
+                    <p>I believe kids learn best when they're having fun and feel safe to make mistakes. Every lesson 
+                        is an adventure where we explore, create, and discover together. I'm not just teaching coding 
+                        and robotics - I'm helping kids develop critical thinking, creativity, and the confidence to 
+                        tackle any challenge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2>How I Can Help Your Child</h2>
+                <p>Two ways we can learn together - both designed around what works best for your family</p>
+            </div>
+            <div class="lessons-grid">
+                <div class="lesson-card featured">
+                    <div class="lesson-badge">Most Popular</div>
+                    <div class="lesson-header">
+                        <h3>Beginner Builder</h3>
+                        <div class="lesson-price">$35<span>/hour</span></div>
+                    </div>
+                    <div class="lesson-content">
+                        <p class="lesson-description">Perfect for kids who are new to robotics or want focused 
+                            one-on-one attention. We'll start with the basics and go at your child's pace!</p>
+                        <ul class="lesson-features">
+                            <li>Ages 6-10</li>
+                            <li>60 minutes of focused fun</li>
+                            <li>Learn by building & playing</li>
+                            <li>Visual programming (no typing!)</li>
+                            <li>Celebrate every small win</li>
+                        </ul>
+                        <a href="#schedule" class="btn btn-primary">Let's Start Building!</a>
+                    </div>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <h3>Group Session</h3>
+                        <div class="lesson-price">$60<span>/session</span></div>
+                    </div>
+                    <div class="lesson-content">
+                        <p class="lesson-description">Got siblings or friends who want to learn together? Perfect! 
+                            I love teaching groups - the energy is amazing and kids learn so much from each other.</p>
+                        <ul class="lesson-features">
+                            <li>2 kids maximum</li>
+                            <li>60 minutes of collaborative fun</li>
+                            <li>Team building & problem solving</li>
+                            <li>Perfect for siblings or friends</li>
+                            <li>Shared discoveries & victories</li>
+                        </ul>
+                        <a href="#schedule" class="btn btn-outline">Book a Group Session</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson-packages">
+                <h3>Package Deals</h3>
+                <div class="package-grid">
+                    <div class="package-item">
+                        <h4>4-Lesson Package</h4>
+                        <p>Save 10% when you book 4 lessons in advance</p>
+                    </div>
+                    <div class="package-item">
+                        <h4>8-Lesson Package</h4>
+                        <p>Save 15% with our most popular package</p>
+                    </div>
+                    <div class="package-item">
+                        <h4>Birthday Parties</h4>
+                        <p>Special group rates for birthday celebrations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Learning in Action</h2>
+                <p>See our students building, coding, and creating amazing robots</p>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be dynamically loaded -->
+                <div class="gallery-item">
+                    <img src="images/gallery/ClawBot.jpeg" alt="Student building a Lego robot"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Building Future Innovators</h4>
+                        <p>Hands-on robot construction</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/Research.jpg" alt="Programming session with instructor"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Code & Create</h4>
+                        <p>Learning programming concepts</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/group-lesson.jpg" alt="Group lesson with multiple students" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Collaborative Learning</h4>
+                        <p>Working together on projects</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/robot-showcase.jpg" alt="Completed robot project" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Amazing Creations</h4>
+                        <p>Students' finished projects</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/Lego_table.jpg" alt="Instructor helping student" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Expert Guidance</h4>
+                        <p>One-on-one instruction</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/advanced-robot.jpg" alt="Advanced robot with sensors" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Advanced Projects</h4>
+                        <p>Complex robotics programming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <div class="section-header">
+                <h2>Schedule Your Lesson</h2>
+                <p>Book your convenient at-home lesson slot directly online</p>
+            </div>
+            <div class="schedule-content">
+                <div class="booking-instructions">
+                    <h3>Easy Online Booking</h3>
+                    <div class="booking-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Pick Date & Time</h4>
+                                <p>Choose from available time slots that work with your schedule</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Confirm Details</h4>
+                                <p>Enter your information and confirm your booking - you'll receive automatic confirmation</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Payment</h4>
+                                <p>Payment due at time of Booking. If not received within 24 hours of initial scheduling, booking may be forfeited. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="appointment-scheduler">
+                    <h3>Select Your Appointment</h3>
+                    <p class="scheduler-note">View and select times from the available sessions below. All bookings include automatic confirmation and calendar reminders.</p>
+                    
+                    <!-- Google Calendar Appointment Scheduling begin -->
+                    <div class="calendar-wrapper">
+                        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0F31yv7-pRyyV0URXv9mjkkERNPTsu0t948bp7tfpVFrdRXq-D-HnKrSZQdGxT9qRJxwECfeKM?gv=true" 
+                                style="border: 0" 
+                                width="100%" 
+                                height="600" 
+                                frameborder="0"
+                                loading="lazy">
+                        </iframe>
+                    </div>
+                    <!-- end Google Calendar Appointment Scheduling -->
+                    
+                    <div class="booking-info">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Flexible Scheduling</h4>
+                                    <p>Multiple time slots available throughout the week</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-bell"></i>
+                                <div>
+                                    <h4>Automatic Reminders</h4>
+                                    <p>Receive email and calendar reminders before your lesson</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-home"></i>
+                                <div>
+                                    <h4>At Your Location</h4>
+                                    <p>All lessons conducted at your home for convenience</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <h4>Easy Rescheduling</h4>
+                                    <p>Need to change your appointment? Contact us 24 hours in advance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-booking">
+                <h3>Need Help Booking?</h3>
+                <p>If you have questions about our lessons or need assistance with booking, don't hesitate to reach out!</p>
+                <div class="contact-options">
+                    <a href="tel:+12679812946" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waiver Section -->
+    <section id="waiver" class="waiver">
+        <div class="container">
+            <div class="section-header">
+                <h2>Waiver & Policies</h2>
+                <p>Important information for parents and guardians</p>
+            </div>
+
+            <div class="waiver-content">
+                <div class="policy-section">
+                    <h3>Liability Waiver</h3>
+                    <div class="policy-text">
+                        <p><strong>PLEASE READ CAREFULLY:</strong> By enrolling your child in BrickCode Academy lessons,
+                            you acknowledge and agree to the following terms:</p>
+
+                        <h4>1. Assumption of Risk</h4>
+                        <p>I understand that participation in Lego robotics and coding activities involves inherent
+                            risks, including but not limited to minor injuries from small parts, cuts from tools, or
+                            accidents during construction activities.</p>
+
+                        <h4>2. Release of Liability</h4>
+                        <p>I hereby release and discharge BrickCode Academy, its instructors, employees, and
+                            representatives from any and all claims, demands, or causes of action arising from my
+                            child's participation in lessons.</p>
+
+                        <h4>3. Medical Emergency</h4>
+                        <p>In case of medical emergency, I authorize BrickCode Academy staff to seek appropriate medical
+                            attention for my child and agree to be responsible for any resulting costs.</p>
+
+                        <h4>4. Photo/Video Consent</h4>
+                        <p>I grant permission for BrickCode Academy to photograph or video my child during lessons for
+                            educational and promotional purposes, with faces obscured or permission explicitly granted.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Policies</h3>
+                    <div class="policy-text">
+                        <h4>Scheduling & Cancellation</h4>
+                        <ul>
+                            <li>Lessons must be cancelled at least 24 hours in advance for a full refund</li>
+                            <li>Same-day cancellations due to illness will be rescheduled without penalty</li>
+                            <li>No-shows will be charged the full lesson fee</li>
+                        </ul>
+
+                        <h4>Payment Terms</h4>
+                        <ul>
+                            <li>Payment is due at time of booking unless other arrangements are made</li>
+                            <li>Package deals must be paid in full at time of purchase</li>
+                            <li>Refunds for unused package lessons available within 30 days</li>
+                        </ul>
+
+                        <h4>Equipment & Materials</h4>
+                        <ul>
+                            <li>All Lego sets and equipment are provided by BrickCode Academy</li>
+                            <li>Families are responsible for any deliberately damaged equipment</li>
+                        </ul>
+
+                        <h4>Instructor Conduct</h4>
+                        <ul>
+                            <li>All instructors are background checked and trained in child safety</li>
+                            <li>Lessons will be conducted in common areas, not private bedrooms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="waiver-download">
+                    <h3>Download Complete Waiver</h3>
+                    <p>For your records, download the complete liability waiver and policy document:</p>
+                    <a href="documents/BrickCode-Academy-Waiver.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> Download PDF Waiver
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Questions? Ready to start your child's coding journey? We're here to help!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(267) 981-2946</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>seanberndlmaier@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Service Area</h4>
+                            <p>We serve the Bucks County, PA area</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 5:00 PM - 8:00 PM</p>
+                            <p>Saturday: Unavailable</p>
+                            <p>Sunday: 9:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form" action="https://formspree.io/f/mqalwgyn" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Your Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="booking">Lesson Booking</option>
+                                <option value="pricing">Pricing Questions</option>
+                                <option value="curriculum">Curriculum Information</option>
+                                <option value="group">Group Lessons</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="5"
+                                placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/gallery/CodingLogo.png" alt="At-Home Robotics Logo" class="footer-logo-image">
+                        <span>At-Home Robotics</span>
+                    </div>
+                    <p>Inspiring young minds through hands-on STEM education. Building the innovators of tomorrow, one
+                        brick at a time.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#lessons">Lessons & Pricing</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> (267) 981-2946</p>
+                        <p><i class="fas fa-envelope"></i> seanberndlmaier@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Serving Bucks County PA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 At-Home Robotics. All rights reserved. | <a href="#waiver">Privacy Policy</a> | <a
+                        href="#waiver">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
