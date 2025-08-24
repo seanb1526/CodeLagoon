@@ -277,6 +277,9 @@ ul {
 
 .hero-image {
     text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .hero-image img {
@@ -289,9 +292,9 @@ ul {
 .hero-image video {
     border-radius: 1rem;
     box-shadow: var(--shadow-lg);
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    max-height: 450px;
+    aspect-ratio: 16/9;
     object-fit: cover;
     display: block;
     margin: 0 auto;
@@ -1139,7 +1142,9 @@ ul {
     }
 
     .hero-image video {
-        max-height: 280px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        max-width: 450px;
     }
 
     .about-content {
@@ -1240,7 +1245,8 @@ ul {
     }
 
     .hero-image video {
-        max-height: 220px;
+        width: 100%;
+        max-width: 350px;
     }
 
     .registration-form,
