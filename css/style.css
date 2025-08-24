@@ -312,8 +312,7 @@ ul {
     object-fit: cover;
     display: block;
     margin: 0 auto;
-    opacity: 0.85; /* Increased opacity reduction */
-    filter: brightness(0.85) contrast(0.9); /* Stronger brightness reduction and reduced contrast */
+   
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -1100,10 +1099,7 @@ ul {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
-    /* Stronger overlay on mobile */
-    .hero-image::after {
-        background: rgba(25, 36, 89, 0.25); /* Darker overlay on mobile */
-    }
+    /* Removed overlay to fix brightness issues */
     
     .nav-menu {
         position: fixed;
@@ -1166,8 +1162,7 @@ ul {
         width: 100%;
         aspect-ratio: 16/9;
         max-width: 450px;
-        opacity: 0.8; /* Even stronger opacity reduction for mobile */
-        filter: brightness(0.8) contrast(0.85) saturate(0.9); /* Additional filters for mobile */
+        /* Removed opacity and filter adjustments to fix brightness issues */
     }
 
     .about-content {
@@ -1244,10 +1239,7 @@ ul {
 }
 
 @media (max-width: 480px) {
-    /* Even stronger overlay on small mobile */
-    .hero-image::after {
-        background: rgba(25, 36, 89, 0.35); /* Darker overlay on small mobile */
-    }
+    /* Removed overlay to fix brightness issues */
 
     .container {
         padding: 0 0.5rem;
@@ -1275,8 +1267,7 @@ ul {
     .hero-image video {
         width: 100%;
         max-width: 350px;
-        opacity: 0.75; /* Even stronger opacity reduction for small mobile */
-        filter: brightness(0.75) contrast(0.8) saturate(0.85); /* Stronger adjustments for small screens */
+        /* Removed opacity and filter adjustments to fix brightness issues */
     }
 
     .registration-form,
