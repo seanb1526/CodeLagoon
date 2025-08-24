@@ -3,7 +3,7 @@
 Follow this checklist before launching your website:
 
 ## ✅ Content Updates
-- [ ] Replace "BrickCode Academy" with your business name
+- [ ] Replace "At-Home Robotics" with your business name
 - [ ] Update all contact information (phone, email, address)
 - [ ] Customize pricing for your lessons
 - [ ] Write your About section story

@@ -1,4 +1,4 @@
-# BrickCode Academy Website
+# At-Home Robotics Website
 
 A fully responsive, mobile-friendly website for at-home Lego Robotics and Coding lessons business.
 
@@ -23,7 +23,7 @@ Lego Biz/
 │   ├── hero-lego-robotics.jpg
 │   └── gallery/            # Gallery images
 ├── documents/
-│   └── BrickCode-Academy-Waiver.pdf
+│   └── At-Home-Robotics-Waiver.pdf
 └── README.md               # This file
 ```
 
@@ -33,7 +33,7 @@ Lego Biz/
 
 **Update these sections in `index.html`:**
 
-- **Business Name**: Replace "BrickCode Academy" throughout the file
+- **Business Name**: Replace "At-Home Robotics" throughout the file
 - **Contact Info**: Update phone, email, and service area
 - **Pricing**: Modify lesson prices in the lessons section
 - **About Section**: Customize your story and mission

@@ -53,7 +53,7 @@ Copy these values into the corresponding sections of index.html.
 ## Quick Update Instructions
 
 1. **Change Business Name**: 
-   - Find and replace "BrickCode Academy" throughout index.html
+   - Find and replace "At-Home Robotics" throughout index.html
    - Update the nav logo and footer
 
 2. **Update Contact Info**:

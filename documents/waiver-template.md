@@ -63,7 +63,7 @@ My child agrees to:
 - Payment methods: Venmo, Paypal and Check
 
 ### EQUIPMENT AND MATERIALS
-- All Lego sets and equipment provided by BrickCode Academy
+- All Lego sets and equipment provided by At-Home Robotics
 - Students may keep small projects created during lessons
 - Families responsible for deliberately damaged equipment
 - Special dietary restrictions or allergies must be disclosed
