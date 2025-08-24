@@ -298,6 +298,8 @@ ul {
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    opacity: 0.9; /* Match the opacity of other elements in the hero section */
+    filter: brightness(0.95); /* Slightly reduce brightness to match surrounding elements */
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -1145,6 +1147,8 @@ ul {
         width: 100%;
         aspect-ratio: 16/9;
         max-width: 450px;
+        opacity: 0.9; /* Ensure consistent opacity on mobile */
+        filter: brightness(0.95); /* Ensure consistent brightness on mobile */
     }
 
     .about-content {
@@ -1247,6 +1251,8 @@ ul {
     .hero-image video {
         width: 100%;
         max-width: 350px;
+        opacity: 0.9; /* Ensure consistent opacity on small mobile */
+        filter: brightness(0.95); /* Ensure consistent brightness on small mobile */
     }
 
     .registration-form,
