@@ -442,14 +442,14 @@ ul {
     animation-delay: 2s;
 }
 
-/* Make hero image container more fun - removing excessive animation */
+/* Update hero image styling to ensure proper display of the static image and remove any video-specific styling */
 .hero-image {
     text-align: center;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     position: relative;
-    z-index: 5; /* Ensure video appears above decorative elements */
+    z-index: 5; /* Ensure image appears above decorative elements */
 }
 
 .hero-image::after {
@@ -470,7 +470,7 @@ ul {
     display: none; /* Hide the animated border */
 }
 
-.hero-image video, .hero-image img {
+.hero-image img {
     border-radius: 1rem;
     box-shadow: var(--shadow-lg);
     width: 100%;
@@ -1326,11 +1326,10 @@ ul {
         flex-wrap: wrap;
     }
 
-    .hero-image video {
+    .hero-image img {
         width: 100%;
         aspect-ratio: 16/9;
         max-width: 450px;
-        /* Removed opacity and filter adjustments to fix brightness issues */
     }
 
     .about-content {
@@ -1432,10 +1431,9 @@ ul {
         font-size: 0.9rem;
     }
 
-    .hero-image video {
+    .hero-image img {
         width: 100%;
         max-width: 350px;
-        /* Removed opacity and filter adjustments to fix brightness issues */
     }
 
     .registration-form,
