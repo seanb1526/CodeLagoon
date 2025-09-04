@@ -1,12 +1,12 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-    --primary-color: #3248B2;
-    --primary-dark: #192459;
-    --secondary-color: #FFBB00;
-    --accent-color: #FFBB00;
-    --background-light: #D6DAF0;
-    --background-white: #FFFFFF;
-    --text-primary: #192459;
+    --primary-color: #2AB5CE;
+    --primary-dark: #394648;
+    --secondary-color: #69995D ;
+    --accent-color: #E1BF92;
+    --background-light: #F6F4F0;
+    --background-white: #FFFF;
+    --text-primary: #2AB5CE;
     --text-secondary: #3248B2;
     --text-light: #6b7280;
     --border-color: #D6DAF0;
@@ -218,14 +218,15 @@ ul {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(135deg, #3248B2 0%, #192459 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: white;
-    padding: 8rem 0 4rem;
+    padding: 8rem 0 5rem; /* Increased bottom padding for wave */
     min-height: calc(100vh - 80px); /* Subtract navbar height from viewport height */
     display: flex;
     align-items: center;
     margin-top: 80px; /* Account for fixed navbar */
     position: relative; /* Ensure proper stacking context */
+    overflow: hidden; /* Ensure decorative elements don't extend outside */
 }
 
 .hero-container {
@@ -275,12 +276,180 @@ ul {
     font-size: 1.2rem;
 }
 
+/* ===== DECORATIVE ELEMENTS ===== */
+.beach-decoration {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none; /* Makes sure clicks go through to underlying elements */
+}
+
+.palm-tree {
+    position: absolute;
+    bottom: -20px;
+    height: 220px; /* Increased from 180px to make trees taller */
+    width: auto;
+    opacity: 0.9;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+    animation: sway 8s ease-in-out infinite;
+}
+
+.palm-left {
+    left: 0;
+    transform-origin: bottom left;
+}
+
+.palm-right {
+    right: 0;
+    transform-origin: bottom right;
+}
+
+.wave-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23FFFFFF"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%23FFFFFF"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23FFFFFF"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.sun-circle {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255,224,130,0.8) 0%, rgba(255,194,102,0.6) 60%, rgba(255,154,0,0.3) 100%);
+    border-radius: 50%;
+    animation: pulse 4s ease-in-out infinite;
+    box-shadow: 0 0 30px 10px rgba(255,154,0,0.3);
+}
+
+/* Sun rays */
+.sun-ray {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140%;
+    height: 3px;
+    background: rgba(255,224,130,0.5);
+    transform-origin: left center;
+}
+
+/* New animation for sun rays */
+@keyframes sunRayPulse {
+    0%, 100% { opacity: 0.3; width: 140%; }
+    50% { opacity: 0.7; width: 160%; }
+}
+
+.sun-ray {
+    animation: sunRayPulse 4s ease-in-out infinite;
+}
+
+.sun-ray:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.sun-ray:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.sun-ray:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    animation: drift 30s linear infinite;
+}
+
+.cloud-1 {
+    top: 50px; /* Moved up from 100px */
+    left: 0; /* Start from left edge instead of percentage */
+    width: 120px;
+    height: auto;
+    animation: drift 30s linear infinite;
+}
+
+.cloud-2 {
+    top: 80px; /* Moved up from 180px */
+    left: 0; /* Start from left edge for consistent looping */
+    width: 180px;
+    height: auto;
+    animation-delay: 15s; /* Half the animation duration for even spacing */
+    animation-duration: 35s;
+}
+
+.sand-particle {
+    position: absolute;
+    background: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.1); opacity: 0.6; }
+}
+
+@keyframes drift {
+    0% { transform: translateX(-150%); }
+    100% { transform: translateX(150vw); }
+}
+
+/* Create sand particles with pseudo elements */
+.hero::before, .hero::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    opacity: 0.4;
+    animation: floating 5s ease-in-out infinite;
+}
+
+.hero::before {
+    top: 30%;
+    left: 15%;
+    width: 8px;
+    height: 8px;
+    animation-delay: 1s;
+}
+
+.hero::after {
+    top: 60%;
+    right: 20%;
+    width: 12px;
+    height: 12px;
+    animation-delay: 2s;
+}
+
+/* Make hero image container more fun - removing excessive animation */
 .hero-image {
     text-align: center;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     position: relative;
+    z-index: 5; /* Ensure video appears above decorative elements */
 }
 
 .hero-image::after {
@@ -290,20 +459,18 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(25, 36, 89, 0.15); /* Semi-transparent overlay matching hero background */
+    background: rgba(25, 36, 89, 0.1); /* Reduced opacity */
     border-radius: 1rem;
-    pointer-events: none; /* Makes sure clicks go through to the video */
+    pointer-events: none;
     z-index: 1;
 }
 
-.hero-image img {
-    border-radius: 1rem;
-    box-shadow: var(--shadow-lg);
-    max-width: 100%;
-    height: auto;
+/* Removing the before element that had the animated border */
+.hero-image::before {
+    display: none; /* Hide the animated border */
 }
 
-.hero-image video {
+.hero-image video, .hero-image img {
     border-radius: 1rem;
     box-shadow: var(--shadow-lg);
     width: 100%;
@@ -312,7 +479,8 @@ ul {
     object-fit: cover;
     display: block;
     margin: 0 auto;
-   
+    position: relative;
+    z-index: 2;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -1296,6 +1464,22 @@ ul {
     .stat-item h4 {
         font-size: 2rem;
     }
+
+    .palm-tree {
+        height: 100px;
+    }
+    
+    .sun-image {
+        display: none; /* Hide the sun image */
+    }
+    
+    .cloud-image.cloud-1 {
+        width: 80px;
+    }
+    
+    .cloud-image.cloud-2 {
+        width: 100px;
+    }
 }
 
 /* ===== ACCESSIBILITY ===== */
@@ -1366,3 +1550,99 @@ textarea:focus,
         padding: 0;
     }
 }
+
+/* Replace the CSS sun and clouds with image-based versions */
+.sun-image {
+    display: none; /* Hide the sun image */
+}
+
+.cloud-image {
+    position: absolute;
+    z-index: 2;
+    animation: drift 30s linear infinite;
+}
+
+.cloud-1 {
+    top: 50px; /* Moved up from 100px */
+    left: 0; /* Start from left edge instead of percentage */
+    width: 120px;
+    height: auto;
+    animation: drift 30s linear infinite;
+}
+
+.cloud-2 {
+    top: 80px; /* Moved up from 180px */
+    left: 0; /* Start from left edge for consistent looping */
+    width: 180px;
+    height: auto;
+    animation-delay: 15s; /* Half the animation duration for even spacing */
+    animation-duration: 35s;
+}
+
+/* Responsive adjustments for image-based decorations */
+@media (max-width: 768px) {
+    .sun-image {
+        width: 100px;
+        top: 30px;
+        right: 40px;
+    }
+    
+    .cloud-image {
+        width: 100px;
+    }
+    
+    .palm-tree {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sun-image {
+        width: 70px;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .cloud-image.cloud-1 {
+        width: 80px;
+    }
+    
+    .cloud-image.cloud-2 {
+        width: 100px;
+    }
+}
+
+/* Fix clouds - completely new animation approach */
+@keyframes cloudDrift1 {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100vw); }
+}
+
+@keyframes cloudDrift2 {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100vw); }
+}
+
+.cloud-image {
+    position: absolute;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.cloud-1 {
+    top: 40px;
+    left: -120px; /* Start fully off-screen */
+    width: 100px;
+    height: auto;
+    animation: cloudDrift1 20s linear infinite;
+}
+
+.cloud-2 {
+    top: 100px; /* More vertical separation */
+    left: -180px; /* Start fully off-screen */
+    width: 150px;
+    height: auto;
+    animation: cloudDrift2 25s linear infinite;
+    animation-delay: -10s; /* Start mid-way through to ensure separation */
+}
+
