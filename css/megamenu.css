@@ -1,0 +1,157 @@
+/* Megamenu styles inspired by AE.com */
+.megamenu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.megamenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100vw;
+    min-width: 800px;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 30px;
+    margin-top: 0;
+    border-top: 1px solid #eee;
+    transform: translateX(-50%);
+}
+
+.megamenu-container:hover .megamenu {
+    display: block;
+}
+
+.megamenu-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.megamenu-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 20px;
+}
+
+.megamenu-column h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.megamenu-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.megamenu-column ul li {
+    margin-bottom: 8px;
+}
+
+.megamenu-column ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 4px 0;
+    transition: color 0.2s ease;
+}
+
+.megamenu-column ul li a:hover {
+    color: #0068b3;
+    text-decoration: underline;
+}
+
+/* Remove the down arrow
+.nav-link.has-megamenu::after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 5px;
+    font-size: 12px;
+}
+*/
+
+/* Center the navbar items */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.nav-link {
+    margin: 0 15px;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 992px) {
+    .nav-menu {
+        justify-content: flex-start;
+        margin: 0;
+    }
+    
+    .nav-link {
+        margin: 10px 0;
+    }
+    
+    .megamenu {
+        left: 0;
+        transform: none;
+    }
+    
+    .megamenu {
+        position: static;
+        width: 100%;
+        min-width: auto;
+        transform: none;
+        display: none;
+        padding: 15px;
+        box-shadow: none;
+        border-top: none;
+        background-color: #f9f9f9;
+    }
+    
+    .megamenu-container.active .megamenu {
+        display: block;
+    }
+    
+    .megamenu-content {
+        flex-direction: column;
+    }
+    
+    .megamenu-column {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .megamenu-column:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-link.has-megamenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .megamenu-container:hover .megamenu {
+        display: none;
+    }
+}

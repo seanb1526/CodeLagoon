@@ -9,6 +9,7 @@
     <meta name="description"
         content="Hi! I'm Sean, and I bring fun Lego robotics and coding lessons directly to your home in Bucks County. Personalized learning that fits your family's schedule.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/megamenu.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -23,10 +24,71 @@
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#lessons" class="nav-link">Lessons</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#schedule" class="nav-link">Schedule</a>
+                
+                <div class="megamenu-container">
+                    <a href="#lessons" class="nav-link has-megamenu">Programs</a>
+                    <div class="megamenu">
+                        <div class="megamenu-content">
+                            <div class="megamenu-column">
+                                <h3>Individual Options</h3>
+                                <ul>
+                                    <li><a href="#lessons">Beginner Builder</a></li>
+                                    <li><a href="#lessons">STEM Explorer</a></li>
+                                    <li><a href="#lessons">Coding Adventures</a></li>
+                                </ul>
+                            </div>
+                            <div class="megamenu-column">
+                                <h3>Group Sessions</h3>
+                                <ul>
+                                    <li><a href="#lessons">Sibling Sessions</a></li>
+                                    <li><a href="#lessons">Friend Groups</a></li>
+                                    <li><a href="#lessons">Birthday Parties</a></li>
+                                </ul>
+                            </div>
+                            <div class="megamenu-column">
+                                <h3>Package Deals</h3>
+                                <ul>
+                                    <li><a href="#lessons">4-Lesson Package</a></li>
+                                    <li><a href="#lessons">8-Lesson Package</a></li>
+                                    <li><a href="#lessons">Summer Camps</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="megamenu-container">
+                    <a href="#schedule" class="nav-link has-megamenu">Booking</a>
+                    <div class="megamenu">
+                        <div class="megamenu-content">
+                            <div class="megamenu-column">
+                                <h3>Schedule</h3>
+                                <ul>
+                                    <li><a href="#schedule">Available Times</a></li>
+                                    <li><a href="#schedule">Booking Process</a></li>
+                                    <li><a href="#schedule">Group Bookings</a></li>
+                                </ul>
+                            </div>
+                            <div class="megamenu-column">
+                                <h3>Policies</h3>
+                                <ul>
+                                    <li><a href="#waiver">Cancellation Policy</a></li>
+                                    <li><a href="#waiver">Payment Terms</a></li>
+                                    <li><a href="#waiver">Liability Waiver</a></li>
+                                </ul>
+                            </div>
+                            <div class="megamenu-column">
+                                <h3>Planning</h3>
+                                <ul>
+                                    <li><a href="#schedule">What to Expect</a></li>
+                                    <li><a href="#schedule">Preparation Tips</a></li>
+                                    <li><a href="#schedule">Special Requests</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
@@ -76,57 +138,6 @@
             </div>
             <div class="hero-image">
                 <img src="images/gallery/ClawBot.jpeg" alt="Kids building Lego robots" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/gallery/sean-photo.jpg" alt="Sean - Your Lego Robotics Instructor" loading="lazy">
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h4>2+</h4>
-                            <p>Years Teaching</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>300+</h4>
-                            <p>Lessons Taught</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4 class="no-animate">1-on-1</h4>
-                            <p>Personal Attention</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h3>Hi, I'm Sean!</h3>
-                    <p>I'm a STEM Teacher with a Bachelor's degree in Computer Science. I have over 5+ years working with children in educational environments. I'm very passionate computer science and its intersection with entrepreneurship. It's my goal to teach and share the knowledge I've accumulated about coding and robotics to encourage kids to explore the field and discover the endless possibilities. </p>
-
-                    <h3>Why I Love Teaching</h3>
-                    <ul>
-                        <li><strong>Every Kid is Different:</strong> I tailor each lesson to match your child's 
-                            personality and learning style</li>
-                        <li><strong>Learning Should Be Fun:</strong> We play, experiment, and sometimes things 
-                            don't work - and that's totally okay!</li>
-                        <li><strong>Building Confidence:</strong> I focus on celebrating small wins and helping 
-                            kids believe in themselves</li>
-                        <li><strong>Real Problem Solving:</strong> We tackle actual challenges, not just follow 
-                            instructions</li>
-                        <li><strong>Your Family's Schedule:</strong> I work around your life, not the other way around</li>
-                    </ul>
-
-                    <h3>My Teaching Philosophy</h3>
-                    <p>I believe kids learn best when they're having fun and feel safe to make mistakes. Every lesson 
-                        is an adventure where we explore, create, and discover together. I'm not just teaching coding 
-                        and robotics - I'm helping kids develop critical thinking, creativity, and the confidence to 
-                        tackle any challenge.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -193,63 +204,6 @@
                     <div class="package-item">
                         <h4>Summer Camp</h4>
                         <p>Ask us about our upcoming Summer Camp programs!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2>Learning in Action</h2>
-                <p>See our students building, coding, and creating amazing robots</p>
-            </div>
-            <div class="gallery-grid" id="gallery-grid">
-                <!-- Gallery items will be dynamically loaded -->
-                <div class="gallery-item">
-                    <img src="images/gallery/ClawBot.jpeg" alt="Student building a Lego robot"
-                        loading="lazy">
-                    <div class="gallery-overlay">
-                        <h4>Building Future Innovators</h4>
-                        <p>Hands-on robot construction</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/Research.jpg" alt="Programming session with instructor"
-                        loading="lazy">
-                    <div class="gallery-overlay">
-                        <h4>Code & Create</h4>
-                        <p>Learning programming concepts</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/group_pic.jpg" alt="Group lesson with multiple students" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h4>Collaborative Learning</h4>
-                        <p>Working together on projects</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/robot_example.jpg" alt="Completed robot project" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h4>Amazing Creations</h4>
-                        <p>Students' finished projects</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/Lego_table.jpg" alt="Instructor helping student" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h4>Expert Guidance</h4>
-                        <p>One-on-one instruction</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery/drone.jpg" alt="Advanced robot with sensors" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h4>Advanced Projects</h4>
-                        <p>Complex robotics programming</p>
                     </div>
                 </div>
             </div>
@@ -551,10 +505,9 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#lessons">Lessons & Pricing</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#lessons">Programs</a></li>
+                        <li><a href="#schedule">Booking</a></li>
+                        <li><a href="#waiver">Policies</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -577,6 +530,35 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // Mobile navigation toggle
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // For mobile devices only - make megamenu toggleable
+        if (window.innerWidth < 992) {
+            const megamenuLinks = document.querySelectorAll('.nav-link.has-megamenu');
+            
+            megamenuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Prevent navigating to the href on mobile
+                    e.preventDefault();
+                    
+                    // Toggle active class on the parent container
+                    this.closest('.megamenu-container').classList.toggle('active');
+                    
+                    // Close other megamenus
+                    megamenuLinks.forEach(otherLink => {
+                        if (otherLink !== this && otherLink.closest('.megamenu-container').classList.contains('active')) {
+                            otherLink.closest('.megamenu-container').classList.remove('active');
+                        }
+                    });
+                });
+            });
+        }
+    </script>
 </body>
 
 </html>
