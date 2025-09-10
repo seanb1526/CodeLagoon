@@ -83,20 +83,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1200px; /* Reduced from 1400px for better centering */
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .nav-menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Changed from center to flex-start */
+    align-items: center;
     flex: 1;
-    margin: 0 20px;
+    margin-left: 10%; /* Add margin to shift items left from center */
 }
 
 .nav-link {
-    margin: 0 15px;
+    margin: 0 25px;
+}
+
+/* Logo link styling */
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding-right: 20px; /* Add spacing to the right of the logo */
+}
+
+.nav-logo a:hover {
+    text-decoration: none;
+    opacity: 0.9;
 }
 
 /* Add responsive adjustments */
